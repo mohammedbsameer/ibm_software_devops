@@ -1,0 +1,5 @@
+(venv) theia:devops-capstone-project$ ibmcloud cr images
+Listing images...
+
+Repository                                Tag   Digest         Namespace             Created        Size     Security status   
+us.icr.io/sn-labs-u7mxhi35yba/guestbook   v1    sha256:d812f   sn-labs-u7mxhi35yba   1 minute ago   23 MB    No Issues
