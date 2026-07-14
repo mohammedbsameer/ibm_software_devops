@@ -1,0 +1,13 @@
+(venv) theia:devops-capstone-project$ kubectl rollout history deployment/hello-world --revision=2
+deployment.apps/hello-world with revision #2
+Pod Template:
+  Labels:       app=hello-world
+                pod-template-hash=59d8df6fbc
+  Containers:
+   hello-world:
+    Image:      us.icr.io/sn-labs-u7mxhi35yba/hello-world:2
+    Port:       8080/TCP
+    Host Port:  0/TCP
+    Environment:        <none>
+    Mounts:     <none>
+  Volumes:      <none>
