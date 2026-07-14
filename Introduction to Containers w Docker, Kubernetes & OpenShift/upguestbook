@@ -1,0 +1,6 @@
+(venv) theia:devops-capstone-project$ docker push us.icr.io/sn-labs-u7mxhi35yba/guestbook:v1
+The push refers to repository [us.icr.io/sn-labs-u7mxhi35yba/guestbook]
+f1a2b3c4d5e6: Pushed
+a1b2c3d4e5f6: Layer already exists
+5a6b7c8d9e0f: Layer already exists
+v1: digest: sha256:d812f86f7db1277a0cf3d996773282823812739178392178238192138128312 size: 948
