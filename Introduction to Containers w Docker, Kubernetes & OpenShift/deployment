@@ -1,0 +1,2 @@
+(venv) theia:devops-capstone-project$ kubectl apply -f deployment.yaml
+deployment.apps/hello-world created
