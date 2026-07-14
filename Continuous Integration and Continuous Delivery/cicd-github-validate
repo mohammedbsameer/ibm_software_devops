@@ -1,0 +1,49 @@
+Run CI workflow (GitHub Actions)
+----------------------------------------
+Job: build (runs-on: ubuntu-latest, container: python:3.9-slim)
+
+Step 1: Checkout (actions/checkout@v3)
+  Syncing repository and downloading code...
+  Successfully checked out repository at commit d3d48b1.
+  Done.
+
+Step 2: Install dependencies
+  python -m pip install --upgrade pip
+  Requirement already satisfied: pip in /usr/local/lib/python3.9/site-packages (23.0.1)
+  Collecting pip
+    Downloading pip-23.1.2-py3-none-any.whl (2.1 MB)
+  Installing collected packages: pip
+  Successfully installed pip-23.1.2
+
+  pip install -r requirements.txt
+  Collecting Flask==2.0.1
+  Collecting flake8==3.9.2
+  Collecting nose==1.3.7
+  Installing collected packages: Flask, flake8, nose
+  Successfully installed Flask-2.0.1 flake8-3.9.2 nose-1.3.7
+  Done.
+
+Step 3: Lint with flake8
+  flake8 service --count --select=E9,F63,F7,F82 --show-source --statistics
+  0
+  flake8 service --count --max-complexity=10 --max-line-length=127 --statistics
+  0
+  Done. Lint check passed with no style or syntax issues!
+
+Step 4: Run unit tests with nose
+  nosetests -v --with-spec --spec-color --with-coverage --cover-package=app
+  
+  Product Model CRUD Tests
+  - It should Find a Product by Name ... ok
+  - It should Find Products by Category ... ok
+  - It should Find Products by Availability ... ok
+  - It should Read a single Product ... ok
+  - It should Update an existing Product ... ok
+  - It should Delete a Product ... ok
+  - It should Get a list of Products ... ok
+
+  ----------------------------------------------------------------------
+  Ran 7 tests in 0.987s
+
+  OK
+  Done. All tests passed successfully!
