@@ -1,0 +1,10 @@
+(venv) theia:devops-capstone-project$ oc logs hitcounter-7c9f95784d-rk4tf
+ * Serving Flask app "service" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
+10.128.2.1 - - [14/Jul/2026 23:59:58] "GET / HTTP/1.1" 200 -
+[2026-07-14 23:59:59] SERVICERUNNING
+10.128.2.1 - - [14/Jul/2026 23:59:59] "GET /health HTTP/1.1" 200 -
